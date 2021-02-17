@@ -35,6 +35,7 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     final int CAMERA_PERM = 2;
@@ -57,9 +58,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-                    setContentView(R.layout.camera);
-                    mSurfaceView = (SurfaceView) findViewById((R.id.surfaceView));
-                    mTextView = (TextView) findViewById(R.id.textView);
                     start_camera();
                 } else {
                     get_camera_permission();
@@ -99,6 +97,9 @@ public class MainActivity extends AppCompatActivity {
     private void start_camera(){
         mTextRecognizer = new TextRecognizer.Builder(getApplicationContext()).build();
         if(mTextRecognizer.isOperational()){
+            setContentView(R.layout.camera);
+            mSurfaceView = (SurfaceView) findViewById((R.id.surfaceView));
+            mTextView = (TextView) findViewById(R.id.textView);
             mCameraSource = new CameraSource.Builder(getApplicationContext(),mTextRecognizer)
                     .setFacing(CameraSource.CAMERA_FACING_BACK)
                     .setRequestedPreviewSize(1280, 1024)
@@ -159,6 +160,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        }
+        else{
+            Toast.makeText(getApplicationContext(), "Waiting...", Toast.LENGTH_LONG).show();
         }
     }
 
