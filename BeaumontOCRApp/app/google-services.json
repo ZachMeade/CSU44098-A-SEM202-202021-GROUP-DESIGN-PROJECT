@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "372207270463",
+    "project_id": "beaumontocr",
+    "storage_bucket": "beaumontocr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372207270463:android:39f54181b0a2138fe4968a",
+        "android_client_info": {
+          "package_name": "com.example.beaumontocrapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372207270463-fpkm6oktf8904a4h8ct07a8uaj74fqc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYfCbHP9D8L-IYt7lGOQ2Af-j7ZhxXlqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372207270463-fpkm6oktf8904a4h8ct07a8uaj74fqc5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

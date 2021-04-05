@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".InfoDisplay">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/beaumontlogo" />
+
+    <TextView
+        android:id="@+id/howToTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="How to use AutoMate"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/howToText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/howToTitle"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:text="Using the AutoMate system is quite easy. Firstly click into the Capture Image option and allow access your device's camera. Once the camera is in use take a picture of the label you wish to check.\n\n After you have successfully taken the picture, you will be prompted with the digitally read text. You must then confirm whether or not the text on your screen is the same as on the label. If the text is read wrong you can manually input the correct information, if not, the process will continue\n\n After the correct information is inputted, the system will check our databases and return if the episode number has been used or not. " />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="65dp"
+        android:layout_marginBottom="20dp"
+        android:background="#3F51B5"
+        android:text="Return Home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
