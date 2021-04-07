@@ -7,10 +7,23 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#3F51B5"
+        android:text="Log Out"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF" />
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/logout"
         app:srcCompat="@drawable/beaumontlogo" />
 
     <Button
