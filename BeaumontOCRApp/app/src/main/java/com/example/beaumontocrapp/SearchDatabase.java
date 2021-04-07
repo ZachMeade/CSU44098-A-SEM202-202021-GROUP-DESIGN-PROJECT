@@ -52,7 +52,7 @@ public class SearchDatabase extends AppCompatActivity {
     }
 
     private void returnHome() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HomePage.class);
         startActivity(intent);
     }
 }
